@@ -11,9 +11,11 @@
 
 namespace mUbreeze{
     namespace eDrive{
+		namespace OSC {
         class OscMessage{
             
-        };
+        	};
+		}
     }
 }
 
