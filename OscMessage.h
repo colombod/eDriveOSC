@@ -11,6 +11,7 @@
 
 #include <string>
 #include "OscPacket.h"
+#include "OscDataEntry.h"
 #include "OscSerialisation.h"
 
 namespace mUbreeze{
