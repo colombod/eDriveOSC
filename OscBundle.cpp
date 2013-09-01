@@ -7,3 +7,12 @@
 //
 
 #include "OscBundle.h"
+namespace mUbreeze{
+    namespace eDrive{
+		namespace OSC {
+            OscBundle::OscBundle(){
+                m_address = "#bundle";
+            }
+        };
+    };
+};

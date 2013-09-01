@@ -11,7 +11,18 @@
 namespace mUbreeze{
     namespace eDrive{
 		namespace OSC{
+            OscMessage::OscMessage()
+            {
+                m_isEvent = false;
+                m_typeCode = ",";
+            }
             
+            OscMessage::~OscMessage()
+            {
+                
+            }
+            
+        
         }
     }
 }

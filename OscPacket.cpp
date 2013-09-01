@@ -11,7 +11,9 @@
 namespace mUbreeze{
     namespace eDrive{
 		namespace OSC{
-            
+            const std::string* const OscPacket::GetAddress(){
+                return &m_address;
+            }
         }
     }
 }

@@ -18,7 +18,9 @@ namespace mUbreeze{
     namespace eDrive{
 		namespace OSC {
             class OscBundle : public virtual OscPacket{
-                
+            public:
+                OscBundle();
+                virtual ~OscBundle();
         	};
 		}
     }

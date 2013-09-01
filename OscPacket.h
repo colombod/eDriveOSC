@@ -8,11 +8,19 @@
 
 #ifndef __eDrive__OscPacket__
 #define __eDrive__OscPacket__
+
+#include <string>
+
 namespace mUbreeze{
     namespace eDrive{
         namespace OSC {
             class OscPacket{
+        
+                protected :
+                std::string m_address;
                 
+            public:
+                const std::string* const GetAddress();
             };
         };
     };
