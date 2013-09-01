@@ -6,14 +6,22 @@
 //
 //
 
-#ifndef eDrive_OscMessage_h
-#define eDrive_OscMessage_h
+#ifndef __eDrive__OscMessage__
+#define __eDrive__OscMessage__
+
+#include "OscPacket.h"
+#include "OscSerialisation.h"
 
 namespace mUbreeze{
     namespace eDrive{
 		namespace OSC {
-        class OscMessage{
-            
+            class OscMessage : public virtual OscPacket{
+            public:
+                template<class T>
+                void AddPayload(T value)
+                {
+                    char code = Serialisation::Serialiser<T>::GetTypeCode(value);
+                }
         	};
 		}
     }
